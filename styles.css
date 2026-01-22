@@ -256,10 +256,12 @@ ul, ol {
 .hero-content {
     flex: 1;
     max-width: 600px;
+    order: 1;
 }
 
 .hero-image {
     flex-shrink: 0;
+    order: 2;
 }
 
 .hero-image img {
