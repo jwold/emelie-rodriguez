@@ -300,14 +300,14 @@ ul, ol {
 
 .chip {
     display: inline-block;
-    padding: var(--space-md) var(--space-xl);
-    background-color: var(--color-primary);
+    padding: var(--space-sm) var(--space-lg);
+    background-color: #5b8bb5;
     border: none;
     border-radius: 999px;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-sm);
     font-weight: 500;
     color: white;
-    box-shadow: 0 2px 8px rgba(30, 58, 95, 0.15);
+    box-shadow: 0 2px 8px rgba(91, 139, 181, 0.15);
 }
 
 .cta-group {
@@ -719,8 +719,8 @@ ul, ol {
     }
 
     .chip {
-        font-size: var(--font-size-base);
-        padding: var(--space-sm) var(--space-lg);
+        font-size: var(--font-size-xs);
+        padding: var(--space-xs) var(--space-md);
     }
 
     .section-padding {
