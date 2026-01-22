@@ -317,6 +317,65 @@ ul, ol {
 }
 
 /* ===================================
+   TESTIMONIAL SECTION
+   =================================== */
+.testimonial {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border-light);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.testimonial-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.quote-icon {
+    font-size: 80px;
+    line-height: 1;
+    color: var(--color-accent);
+    opacity: 0.3;
+    font-family: Georgia, serif;
+    margin-bottom: var(--space-md);
+}
+
+.testimonial-quote {
+    font-size: var(--font-size-xl);
+    line-height: 1.7;
+    color: var(--color-text);
+    font-style: italic;
+    margin: 0 0 var(--space-2xl);
+    font-weight: 400;
+}
+
+.testimonial-attribution {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.attribution-name {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.attribution-title {
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.attribution-impact {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: var(--space-sm);
+}
+
+/* ===================================
    ABOUT SECTION
    =================================== */
 .about {
@@ -723,6 +782,14 @@ ul, ol {
         padding: var(--space-xs) var(--space-md);
     }
 
+    .testimonial-quote {
+        font-size: var(--font-size-lg);
+    }
+
+    .quote-icon {
+        font-size: 60px;
+    }
+
     .section-padding {
         padding: var(--space-2xl) 0;
     }
@@ -796,7 +863,8 @@ ul, ol {
     .contact-form,
     .form-ui,
     .section-note,
-    .hero-image {
+    .hero-image,
+    .testimonial {
         display: none !important;
     }
 
