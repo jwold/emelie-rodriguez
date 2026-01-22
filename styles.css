@@ -25,6 +25,7 @@
     --font-size-2xl: 1.5rem;     /* 24px */
     --font-size-3xl: 2rem;       /* 32px */
     --font-size-4xl: 2.5rem;     /* 40px */
+    --font-size-5xl: 3.5rem;     /* 56px */
 
     /* Spacing */
     --space-xs: 0.25rem;   /* 4px */
@@ -274,33 +275,39 @@ ul, ol {
 }
 
 .hero h1 {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-lg);
     color: var(--color-primary);
+    font-size: var(--font-size-5xl);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
 }
 
 .hero-tagline {
-    font-size: var(--font-size-lg);
-    color: var(--color-text-light);
-    margin-bottom: var(--space-xl);
-    line-height: 1.5;
+    font-size: var(--font-size-2xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-2xl);
+    line-height: 1.4;
+    font-weight: 400;
 }
 
 .trust-chips {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-sm);
-    margin-bottom: var(--space-xl);
+    gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
 }
 
 .chip {
     display: inline-block;
-    padding: var(--space-sm) var(--space-md);
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
+    padding: var(--space-md) var(--space-xl);
+    background-color: var(--color-primary);
+    border: none;
     border-radius: 999px;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-lg);
     font-weight: 500;
-    color: var(--color-text);
+    color: white;
+    box-shadow: 0 2px 8px rgba(30, 58, 95, 0.15);
 }
 
 .cta-group {
@@ -666,8 +673,10 @@ ul, ol {
    =================================== */
 @media (max-width: 768px) {
     :root {
+        --font-size-5xl: 2.25rem; /* 36px */
         --font-size-4xl: 2rem;    /* 32px */
         --font-size-3xl: 1.5rem;  /* 24px */
+        --font-size-2xl: 1.25rem; /* 20px */
         --space-4xl: 3rem;
         --space-3xl: 2rem;
         --container-padding: var(--space-md);
@@ -707,6 +716,11 @@ ul, ol {
 
     .trust-chips {
         justify-content: center;
+    }
+
+    .chip {
+        font-size: var(--font-size-base);
+        padding: var(--space-sm) var(--space-lg);
     }
 
     .section-padding {
