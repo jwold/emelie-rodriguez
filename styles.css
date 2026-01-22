@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* ===================================
    CSS VARIABLES
    =================================== */
@@ -172,6 +174,12 @@ ul, ol {
     color: var(--color-primary);
 }
 
+.nav-resume {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
 /* ===================================
    BUTTONS
    =================================== */
@@ -300,14 +308,14 @@ ul, ol {
 
 .chip {
     display: inline-block;
-    padding: var(--space-sm) var(--space-lg);
-    background-color: #5b8bb5;
+    padding: var(--space-xs) var(--space-md);
+    background-color: #89b9e0;
     border: none;
     border-radius: 999px;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     font-weight: 500;
     color: white;
-    box-shadow: 0 2px 8px rgba(91, 139, 181, 0.15);
+    box-shadow: 0 2px 8px rgba(137, 185, 224, 0.15);
 }
 
 .cta-group {
@@ -625,7 +633,8 @@ ul, ol {
 }
 
 .contact-content {
-    max-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
     margin-top: var(--space-xl);
 }
 
@@ -636,9 +645,9 @@ ul, ol {
 }
 
 .contact-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
 }
 
 .contact-list li {
@@ -657,6 +666,15 @@ ul, ol {
 
 .contact-list a {
     font-size: var(--font-size-lg);
+}
+
+.linkedin-icon-link {
+    font-size: var(--font-size-2xl);
+    transition: color var(--transition-fast);
+}
+
+.linkedin-icon-link:hover {
+    color: #0077b5;
 }
 
 /* Contact Form (Non-functional) */
@@ -742,25 +760,32 @@ ul, ol {
     }
 
     .nav-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .nav-logo {
+        margin-bottom: var(--space-xs);
     }
 
     .nav-links {
-        order: 3;
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
-        gap: var(--space-md);
-        margin-top: var(--space-sm);
+        gap: var(--space-sm) var(--space-md);
+    }
+
+    .nav-resume {
+        display: none;
     }
 
     .hero {
-        padding: var(--space-3xl) 0;
+        padding: var(--space-2xl) 0;
     }
 
     .hero-layout {
-        flex-direction: column;
-        gap: var(--space-xl);
+        flex-direction: column-reverse;
+        gap: var(--space-lg);
         text-align: center;
     }
 
@@ -768,18 +793,36 @@ ul, ol {
         max-width: 100%;
     }
 
+    .hero-image {
+        order: -1;
+    }
+
     .hero-image img {
-        width: 220px;
-        height: 220px;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .hero-tagline {
+        font-size: var(--font-size-base);
     }
 
     .trust-chips {
         justify-content: center;
+        gap: var(--space-sm);
     }
 
     .chip {
         font-size: var(--font-size-xs);
-        padding: var(--space-xs) var(--space-md);
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .cta-group {
+        justify-content: center;
     }
 
     .testimonial-quote {
@@ -818,6 +861,10 @@ ul, ol {
     }
 
     .education-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-list {
         grid-template-columns: 1fr;
     }
 }

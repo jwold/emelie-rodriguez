@@ -24,7 +24,13 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- UIkit CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
+
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 <body>
     <header class="site-header">
@@ -38,6 +44,9 @@
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="nav-resume">
+                    <a href="assets/Emelie-Rodriguez-Resume.pdf" class="btn btn-secondary btn-small" download>Resume</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -54,11 +63,7 @@
                         <div class="trust-chips" role="list">
                             <span class="chip" role="listitem">MAcc</span>
                             <span class="chip" role="listitem">Business tax</span>
-                            <span class="chip" role="listitem">IRS correspondence</span>
-                            <span class="chip" role="listitem">QuickBooks certified</span>
                             <span class="chip" role="listitem">Multi-state expert</span>
-                            <span class="chip" role="listitem">Process improvement</span>
-                            <span class="chip" role="listitem">120+ returns annually</span>
                         </div>
 
                         <div class="cta-group">
@@ -120,9 +125,6 @@
         <section id="experience" class="experience section-padding">
             <div class="container">
                 <h2>Experience</h2>
-                <p class="section-note">
-                    <a href="assets/Emelie-Rodriguez-Resume.pdf" download>Download the one-page PDF resume</a>
-                </p>
 
                 <div class="timeline">
                     <!-- Role 1 -->
@@ -329,7 +331,9 @@
                             </li>
                             <li>
                                 <strong>LinkedIn:</strong>
-                                <a href="https://linkedin.com/in/emelie-rodriguez-cpa" target="_blank" rel="noopener noreferrer">linkedin.com/in/emelie-rodriguez-cpa</a>
+                                <a href="https://linkedin.com/in/emelie-rodriguez-cpa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="linkedin-icon-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
                             </li>
                             <li>
                                 <strong>Location:</strong>
