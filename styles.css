@@ -514,9 +514,9 @@ ul, ol {
 }
 
 .education-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2xl);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
     margin-top: var(--space-xl);
 }
 
@@ -733,6 +733,10 @@ ul, ol {
     }
 
     .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-content {
         grid-template-columns: 1fr;
     }
 }
