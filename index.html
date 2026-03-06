@@ -580,13 +580,12 @@
         const el = document.getElementById('hero-headline');
 
         setInterval(() => {
-            el.style.transition = 'opacity 1.2s ease';
             el.style.opacity = '0';
             setTimeout(() => {
                 current = (current + 1) % headlines.length;
                 el.textContent = headlines[current];
                 el.style.opacity = '1';
-            }, 1200);
+            }, 900);
         }, 10000);
     </script>
 </body>
